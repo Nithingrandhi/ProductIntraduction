@@ -1,0 +1,110 @@
+/* page.css */
+
+body {
+  background: linear-gradient(to bottom, #000000, #000000, #000000);
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 1.125rem;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  color: #d1d5db; /* Tailwind's gray-300 */
+}
+
+.shop-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 8px 20px;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #dc2626;
+}
+
+.navbar {
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  position: relative;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background-color: #111;
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-column h4 {
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.menu-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-column a:hover {
+  text-decoration: underline;
+}
+

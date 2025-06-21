@@ -1,0 +1,83 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  overflow: hidden;
+}
+.hero-image {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  opacity: 0;
+  transform: translateX(80px);
+  animation: scrollIn 1.5s ease-out forwards;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.scroll-arrow {
+  margin-top: 20px;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  animation: bounce 1.5s infinite;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.right-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.right-scroll-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.left-scroll-arrow {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-scroll-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes scrollIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
